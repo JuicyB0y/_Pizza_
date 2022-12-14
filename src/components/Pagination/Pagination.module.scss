@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  li {
+    display: inline-block;
+
+    a {
+      display: flex;
+      color: #fe5f1e;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #fe5f1e;
+      border-radius: 30px;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fe5f1e;
+        color: #fff;
+      }
+    }
+  }
+  //   :global {
+  //     global мы ставим потому что,  классы которые внутри написаны не нами, они из библиотеки
+  //     .previous {
+  //       background-color: red;
+  //     }
+  //   }
+
+  :global {
+    .selected {
+      a {
+        background-color: #fe5f1e;
+        color: #fff;
+      }
+    }
+  }
+}
